@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey Form</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="survey.js"></script>
+
+    </head>
+    <body>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p id="modalContent"></p>
+        </div>
+      </div>
+      <h1 id="title">Survey Form</h1>
+        <p id="description"><em>Your opinion matters</em></p>
+      <div class="container">
+        <form id="survey-form">
+          <label for="name" id="name-label">Name <input id="name" name="name" type="text" placeholder="Enter your name" required /></label>
+          <label id="email-label" for="email">Email <input type="email" id="email" placeholder="Enter your email" required/></label>
+          <label id="number-label" for"number">Age (optional)<input id="number" type="number" min='5' max="100" placeholder="Age"/></label>
+          <label>
+            Which option best describes your current role?<select id="dropdown">
+              <option style="color:gray;" selected disabled>Select current role</option>
+              <option>Student</option>
+              <option>Full-Time</option>
+              <option>Self-Employed</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+            </select>
+            </label>
+            <p id="bruh">Would you recommend our site to a freind? </p>
+      <label for="def" class="radio"> <input id="def" type="radio" name="recommend" class="lulli" value="Definitely"> Definitely </label>
+<label for="may" class="radio"><input id="may" type="radio" name="recommend"  class="lulli" value="Maybe"> Maybe </label>
+<label for="nos" class="radio"><input id="nos" type="radio" name="recommend" class="lulli" value="Not Sure">  Not Sure</label>
+<p id="bruh">What would you like to see improved? (Check all that apply)</p>
+<label class="radio"><input type="checkbox" value="front" class="lulli"> Front-end Projects</label>
+<label class="radio"><input type="checkbox" value="back" class="lulli"> Back-end Projects</label>
+
+<label class="radio"><input type="checkbox" value="dv" class="lulli"> Data Visualization</label>
+
+<label class="radio"><input type="checkbox" value="challe" class="lulli"> Challenges</label>
+
+<label class="radio"><input type="checkbox" value="open" class="lulli"> Open Source Community</label>
+<label class="radio"><input type="checkbox" value="forum" class="lulli"> Forum</label>
+<label class="radio"><input type="checkbox" value="add" class="lulli"> Additional Courses</label>
+
+<label for="comments">Any comments or suggestions?<textarea id='comments' rows="5" placeholder=" Enter your comment here..."></textarea></label>
+ <button type="submit" id="submit" class="submitBtn">Submit</button>
+
+          
+          
+          </form>
+
+        </div>
+      </body>
+
+  </html>
